@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Info</title>
+</head>
+<body>
+    <h1>Phone Number Information</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="phone_number">Enter phone number with country code:</label>
+        <input type="text" id="phone_number" name="phone_number" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
